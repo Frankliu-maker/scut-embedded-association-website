@@ -1,0 +1,93 @@
+<svg width="480" height="480" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="board" x1="112" y1="128" x2="376" y2="356" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#104F55"/>
+      <stop offset="1" stop-color="#07363A"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="176" y1="190" x2="304" y2="310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00B9BE"/>
+      <stop offset="1" stop-color="#007C83"/>
+    </linearGradient>
+    <filter id="boardShadow" x="48" y="82" width="384" height="344" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#003B40" flood-opacity="0.3"/>
+    </filter>
+    <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#00979D" fill-opacity="0.18"/>
+    </pattern>
+  </defs>
+
+  <circle cx="240" cy="240" r="210" fill="url(#dotGrid)"/>
+  <circle cx="240" cy="240" r="168" stroke="#00979D" stroke-opacity="0.1"/>
+
+  <g filter="url(#boardShadow)">
+    <rect x="90" y="120" width="300" height="240" rx="24" fill="url(#board)"/>
+    <rect x="90" y="120" width="300" height="240" rx="24" stroke="#1E6A70" stroke-width="2"/>
+  </g>
+
+  <!-- 电路走线 -->
+  <g stroke="#45D0D5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.72">
+    <path d="M170 206H136V174H112"/>
+    <path d="M170 238H128V270H104"/>
+    <path d="M170 274H140V310H118"/>
+    <path d="M310 206H344V174H368"/>
+    <path d="M310 238H354V270H376"/>
+    <path d="M310 274H340V310H362"/>
+  </g>
+  <g fill="#F5A623">
+    <circle cx="112" cy="174" r="5"/>
+    <circle cx="104" cy="270" r="5"/>
+    <circle cx="118" cy="310" r="5"/>
+    <circle cx="368" cy="174" r="5"/>
+    <circle cx="376" cy="270" r="5"/>
+    <circle cx="362" cy="310" r="5"/>
+  </g>
+
+  <!-- 安装孔 -->
+  <g fill="#0A3F43" stroke="#2D7C82" stroke-width="2">
+    <circle cx="112" cy="144" r="7"/>
+    <circle cx="368" cy="144" r="7"/>
+    <circle cx="112" cy="336" r="7"/>
+    <circle cx="368" cy="336" r="7"/>
+  </g>
+
+  <!-- 芯片引脚 -->
+  <g stroke="#8BE9EC" stroke-width="5" stroke-linecap="round">
+    <path d="M190 190V174M216 190V174M242 190V174M268 190V174M294 190V174"/>
+    <path d="M190 310V326M216 310V326M242 310V326M268 310V326M294 310V326"/>
+    <path d="M170 218H154M170 244H154M170 270H154M170 296H154"/>
+    <path d="M310 218H326M310 244H326M310 270H326M310 296H326"/>
+  </g>
+
+  <!-- 主控芯片 -->
+  <rect x="170" y="190" width="140" height="130" rx="16" fill="url(#chip)" stroke="#85E3E6" stroke-width="2"/>
+  <rect x="179" y="199" width="122" height="112" rx="11" stroke="#B6F4F5" stroke-opacity="0.35"/>
+  <circle cx="188" cy="208" r="3" fill="#F5A623"/>
+  <text x="240" y="249" text-anchor="middle" fill="#F2FFFF" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="27" font-weight="700" letter-spacing="4">SCUT</text>
+  <text x="240" y="272" text-anchor="middle" fill="#A9EFF1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="4">EMBEDDED</text>
+  <path d="M210 286H270" stroke="#A9EFF1" stroke-opacity="0.4" stroke-linecap="round"/>
+  <text x="240" y="300" text-anchor="middle" fill="#C9F8F9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8" letter-spacing="2">SCUT-ES / REV.01</text>
+
+  <!-- 板载元件 -->
+  <g>
+    <rect x="132" y="150" width="34" height="14" rx="3" fill="#C5D4D5"/>
+    <rect x="137" y="154" width="24" height="6" rx="2" fill="#7E9294"/>
+    <rect x="326" y="316" width="34" height="14" rx="3" fill="#C5D4D5"/>
+    <rect x="331" y="320" width="24" height="6" rx="2" fill="#7E9294"/>
+    <circle cx="326" cy="154" r="9" fill="#173F43" stroke="#C5D4D5" stroke-width="2"/>
+    <circle cx="326" cy="154" r="3" fill="#8BE9EC"/>
+    <circle cx="144" cy="316" r="9" fill="#173F43" stroke="#C5D4D5" stroke-width="2"/>
+    <circle cx="144" cy="316" r="3" fill="#8BE9EC"/>
+  </g>
+
+  <!-- 状态灯 -->
+  <circle cx="326" cy="186" r="8" fill="#F5A623"/>
+  <circle cx="326" cy="186" r="15" fill="#F5A623" fill-opacity="0.16"/>
+  <circle cx="350" cy="186" r="4" fill="#5BE0A0"/>
+
+  <!-- USB-C 接口 -->
+  <rect x="205" y="348" width="70" height="20" rx="10" fill="#AAB9BB"/>
+  <rect x="213" y="354" width="54" height="8" rx="4" fill="#42575A"/>
+
+  <!-- 丝印 -->
+  <text x="240" y="431" text-anchor="middle" fill="#0C6A70" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="5">SCUT EMBEDDED SYSTEMS</text>
+</svg>
