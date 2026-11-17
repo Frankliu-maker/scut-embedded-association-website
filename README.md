@@ -6,6 +6,11 @@ GitHub 仓库：https://github.com/Frankliu-maker/scut-embedded-association-webs
 
 ![首页预览](./preview.png)
 
+## 协作说明
+
+- 人类贡献者请阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)
+- AI 编程助手请阅读 [AGENTS.md](./AGENTS.md)
+
 ## 本地开发
 
 ```bash
