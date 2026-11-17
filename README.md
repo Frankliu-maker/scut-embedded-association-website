@@ -2,7 +2,7 @@
 
 基于 VitePress 的协会官网项目。
 
-GitHub 仓库：https://github.com/Frankliu-maker/scut-embedd-association-website
+GitHub 仓库：https://github.com/Frankliu-maker/scut-embedded-association-website
 
 ![首页预览](./preview.png)
 
