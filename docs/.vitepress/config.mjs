@@ -4,6 +4,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: '华南理工大学嵌入式协会官网',
   description: '华南理工大学嵌入式协会官方网站：学习路线、项目展示、活动公告与加入方式。',
+  base: process.env.VITEPRESS_BASE || '/',
 
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],

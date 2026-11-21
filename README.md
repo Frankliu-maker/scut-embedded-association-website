@@ -29,6 +29,24 @@ npm run docs:preview
 
 构建产物位于 `docs/.vitepress/dist/`。
 
+## GitHub Pages 部署
+
+仓库已包含 `.github/workflows/deploy.yml`，推送到 `main` 后会自动构建并部署。
+
+第一次使用时，在 GitHub 仓库中设置：
+
+```text
+Settings → Pages → Build and deployment → Source: GitHub Actions
+```
+
+部署完成后地址为：
+
+```text
+https://<组织名>.github.io/scut-embedded-association-website/
+```
+
+如果以后绑定自定义域名，需要把 `VITEPRESS_BASE` 改为 `/`，并配置 DNS 和 `Custom domain`。
+
 ## 目录说明
 
 ```text
