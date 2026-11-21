@@ -2,7 +2,7 @@
 
 基于 VitePress 的协会官网项目。
 
-GitHub 仓库：https://github.com/Frankliu-maker/scut-embedded-association-website
+GitHub 仓库：https://github.com/SCUT-ESA/scut-embedded-association-website
 
 ![首页预览](./preview.png)
 
@@ -33,16 +33,18 @@ npm run docs:preview
 
 仓库已包含 `.github/workflows/deploy.yml`，推送到 `main` 后会自动构建并部署。
 
-第一次使用时，在 GitHub 仓库中设置：
+第一次使用时，需要先在 GitHub 仓库中手动启用 Pages：
 
 ```text
 Settings → Pages → Build and deployment → Source: GitHub Actions
 ```
 
+启用后进入 `Actions`，找到 `Deploy VitePress site to Pages`，点击 `Re-run all jobs`。
+
 部署完成后地址为：
 
 ```text
-https://<组织名>.github.io/scut-embedded-association-website/
+https://scut-esa.github.io/scut-embedded-association-website/
 ```
 
 如果以后绑定自定义域名，需要把 `VITEPRESS_BASE` 改为 `/`，并配置 DNS 和 `Custom domain`。
